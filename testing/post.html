@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>ChatGPT Post Page</title>
+    <link rel="stylesheet" type="text/css" href="post.css">
+    <link rel="icon" href="data:,">
+  </head>
+  <body>
+    <header>
+      <img id="sidebar-toggle-button" src="arrow.png" alt="Toggle Sidebar">
+    </header>
+    <nav id="sidebar">
+      <input type="text" placeholder="Search..." id="search-bar">
+      <button id="login-button">Login</button>
+      <button id="signin-button">Sign In</button>
+      <button id="logout-button">Logout</button>
+      <button id="home-button" href="home.html">Home</button>
+    </nav>  
+    <script src="post.js"></script>
+    <main>
+      <h1>Create a New Post</h1>
+      <form action="" method="post">
+        <label for="post-name">Post Name:</label>
+        <input type="text" id="post-name" name="post-name" required>
+        <br><br>
+        <label for="post-description">Description:</label>
+        <textarea id="post-description" name="post-description" rows="5" required></textarea>
+        <br><br>
+        <label for="screenshot">Screenshot/Clip (optional, max 10MB):</label>
+        <input type="file" id="screenshot" name="screenshot" accept="image/*, video/*" maxsize="10485760">
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </main>
+  </body>
+</html>

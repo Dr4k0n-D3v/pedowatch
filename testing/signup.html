@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <link rel="icon" href="data:,">
+  </head>
+  <body>
+    <header>
+      <img id="sidebar-toggle-button" src="arrow.png" alt="Toggle Sidebar">
+    </header>
+    <nav id="sidebar">
+      <input type="text" placeholder="Search..." id="search-bar">
+      <button id="login-button">Login</button>
+      <button id="signin-button">Sign In</button>
+      <button id="logout-button">Logout</button>
+      <button id="home-button" href="home.html">Home</button>
+    </nav>  
+    <div class="signup-form">
+      <h2>Signup</h2>
+      <form>
+        <label for="user">Username:</label>
+        <input type="text" id="user" name="username" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button id="lbutton">Signup</button>
+      </form>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>
